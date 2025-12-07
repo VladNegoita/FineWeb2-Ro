@@ -1,0 +1,34 @@
+site_name: FineWeb2-Ro
+site_url: https://VladNegoita.github.io/FineWeb2-Ro/
+repo_url: https://github.com/VladNegoita/FineWeb2-Ro
+repo_name: VladNegoita/FineWeb2-Ro
+
+theme:
+  name: material
+  palette:
+    # Light mode (Default)
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - admonition
